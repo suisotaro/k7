@@ -2,8 +2,7 @@
 <script>
   var url = data[location.pathname.slice(1)];
   if(url != undefined){
-    alert(url);
-    location.replase(url);
+    location.replace(url);
   } else{
     location.replace("error.html");
   }
