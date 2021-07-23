@@ -1,3 +1,3 @@
 var data = {
-  "a":"https://sites.google.com/view/suiso"
+  "a":"suisotaro.f5.si"
 }
