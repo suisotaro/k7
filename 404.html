@@ -1,11 +1,4 @@
 <script>
-  var xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = function(){
-    if (xhr.readyState === 4 && xhr.status === 200){
-      location.replace(xhr.responseText);
-    }
-  };
-  xhr.open("GET", "https://script.google.com/macros/s/AKfycbwDpGkEqutPSUFW_U_XLJ0rJkW9RNXt38knTzv9cku7ARc-6MvF4FwffOPqw1lZh7AQig/exec?u=" +
-          location.pathname.slice(1));
-  xhr.send();
+  location.replace("https://script.google.com/macros/s/AKfycbwDpGkEqutPSUFW_U_XLJ0rJkW9RNXt38knTzv9cku7ARc-6MvF4FwffOPqw1lZh7AQig/exec?u=" + 
+                   location.pathname.slice(1));
 </script>
