@@ -1,4 +1,9 @@
 <script src="data.js"></script>
 <script>
-  location.replace(data[location.pathname.slice(1)]);
+  var url = data[location.pathname.slice(1)]
+  if(url != undefined){
+    location.replace(url);
+  } else{
+    location.replace("error.html");
+  }
 </script>
