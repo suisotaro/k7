@@ -1,3 +1,4 @@
+<!--
 <script src="data.js"></script>
 <script>
   var url = data[location.pathname.slice(1)];
@@ -6,4 +7,10 @@
   } else{
     location.replace("error.html");
   }
+</script>
+-->
+<script>
+  var url = data[location.pathname.slice(1)];
+  location.replace("https://script.google.com/macros/s/AKfycbwAdHQKh2xvieyPqFPylLVH7GlhFPE_LL81447HNSC_LZuRbh03YMWFblnmngSxU2jGpQ/exec?" +
+                  url);
 </script>
