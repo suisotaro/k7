@@ -1,9 +1,5 @@
 <script>
   var url = "https://script.google.com/macros/s/AKfycbzQ-y1-v9GIozewAM2ivQ19VJHBxUtrIqT3apm-vrGmt4wJlDbmiVPm_z0FN3DgQtDhsg/exec" + location.search;
-  var end = false;
-  fetch(url)
-  .then(res => res.text())
-  .then(text => end=true;document.write(text));
-  
-  while(!end){}
+  var res = await fetch(url);
+  document.write(res.text());
 </script>
