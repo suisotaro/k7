@@ -1,5 +1,4 @@
 <script>
-   fetch("https://script.google.com/macros/s/AKfycbwxSDx5CsqpwSzJ8XOThvQX8soZpzk1BQ69og6wprK79PPYP3o8P2w4O-awS_BCxHpD6A/exec")
-   .then(res => res.text())
-   .then(text => document.write(text));
+   var res = await fetch("https://script.google.com/macros/s/AKfycbwxSDx5CsqpwSzJ8XOThvQX8soZpzk1BQ69og6wprK79PPYP3o8P2w4O-awS_BCxHpD6A/exec")
+   document.write(res.text());
 </script>
